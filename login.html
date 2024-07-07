@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
     <div class="container">
 
-        <form class="form">
-            <div class="title">Welcome,<br><span>Log in to continue</span></div>
-            <input class="input" name="email" placeholder="Email" type="email">
-            <input class="input" name="password" placeholder="Password" type="password">
+        <form class="form" id="loginFrom">
+            <div class="title">Welcome,<br><span>Log in to continue...</span></div>
+            <input class="input" id="username" name="username" placeholder="Name" type="text">
+            <input class="input" id="password" name="password" placeholder="Password" type="password">
             <div class="login-with">
                 <div class="button-log"><b>t</b></div>
                 <div class="button-log">
@@ -40,6 +42,8 @@
             <button class="button-confirm">Let`s go →</button>
         </form>
     </div>
+
+    <script src="login.js"></script>
 </body>
 
 </html>
