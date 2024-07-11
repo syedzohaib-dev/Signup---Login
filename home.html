@@ -6,51 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
     <div class="navbar">
         <h2>Home Page</h2>
         <div class="btn">
-            <p>User.. </p>
-            <button type="button">Logout</button>
+            <p><span></span></p>
+            <button type="button" id="logoutButton">Logout</button>
         </div>
     </div>
     <div class="container">
 
         <div class="box">
-            <p>Hello, <span>33</span></p>
+            <p>Hello, <span id="username"></span></p>
         </div>
 
         <div class="inputBox">
-            <input type="text" name="" id="">
-            <button type="button">Write Something</button>
+            <input id="cardInput" type="text" name="" minlength="5" maxlength="70">
+            <button id="cardSubmit" type="button">Write Something</button>
         </div>
     </div>
     <div class="cardBox">
-        <div class="card">
+         <!-- <div class="card">
             <div class="cardPara">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, deserunt?</p>
             </div>
             <div class="auther">Creater by.. <span> Ali</span></div>
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-        <div class="card">
-
-        </div>
-
-    </div>
+        </div>  -->
+    </div> 
 
     <script src="home.js"></script>
 </body>

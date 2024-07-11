@@ -24,11 +24,11 @@ var signupForm = document.querySelector('#submitForm').addEventListener('submit'
 
     const users = JSON.parse(localStorage.getItem('users')) || []
 
-    users.push({username, email, password, confirmpassword })
+    users.push({ username, email, password, confirmpassword })
 
     localStorage.setItem('users', JSON.stringify(users))
 
-    Swal.fire("You signup Successfully  ");
+    Swal.fire("You signup Successfully");
 
     setTimeout(() => {
         window.location.href = 'login.html'
