@@ -7,6 +7,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -25,18 +28,26 @@
         </div>
 
         <div class="inputBox">
-            <input id="cardInput" type="text" name="" minlength="5" maxlength="70">
-            <button id="cardSubmit" type="button">Write Something</button>
+            <input id="cardInput" type="text" name="" minlength="5" maxlength="70" placeholder="What's on your mind">
+            <button id="cardSubmit" type="button">Post</button>
         </div>
     </div>
-    <div class="cardBox">
-         <!-- <div class="card">
+    <div class="cardBox" id="posts">
+        <!-- <div class="card">
+            <div class="auther">Creater by.. <span> Ali</span></div>
+
             <div class="cardPara">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, deserunt?</p>
             </div>
-            <div class="auther">Creater by.. <span> Ali</span></div>
-        </div>  -->
-    </div> 
+            <div class="btnGroup">
+                <button type="button" class="edit" onclick="editPost()"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button type="button" class="delete" onclick="deletePost()"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="dateStamp">12/3/2024</div>
+        </div> -->
+    </div>
+
+
 
     <script src="home.js"></script>
 </body>
